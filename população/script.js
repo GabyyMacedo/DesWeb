@@ -48,3 +48,7 @@ function limparCampos(){
     resultado.innerHTML = " "
 
 }
+
+//PESQUISA INNERHTML
+//pode ser usado para receber o conteúdo 
+//de um elemento HTML ou para definir um novo conteúdo para ele.
