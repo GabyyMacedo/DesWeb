@@ -2,10 +2,10 @@ console.log("Script Carregado")
 
 function calcularAnos() {
     console.log("botão de Calcular clicando")
-    let popAInput = document.getElementById("popA").value.trim //elimina espaços antes e depois, pega o valor que o usuario digitou
-    let taxaAInput = document.getElementById("taxaA").value.trim
-    let popBInput = document.getElementById("popB").value.trim
-    let taxaBInput = document.getElementById("taxaB").value.trim
+    let popAInput = document.getElementById("popA").value.trim()
+    let taxaAInput = document.getElementById("taxaA").value.trim()
+    let popBInput = document.getElementById("popB").value.trim()
+    let taxaBInput = document.getElementById("taxaB").value.trim()
 
     if(popAInput ==="" || taxaAInput ==="" || popBInput ==="" || taxaBInput ===""){
         alert("Por favor, preencha todos os campos")
@@ -24,17 +24,16 @@ let taxaB = parseFloat("taxaBInput")/100
 let anos = 0
 
 while (popA < popB){
-    popA *= (1 + taxaA)  //popA = popA (1 + taxaA)
+    popA *= (1 + taxaA) 
     popB *= (1 + taxaB)
-
-    anos++ //incremento
+    anos++ 
 
 }
 console.log(" O número de anos calculados foi: ", anos)
 
 let resultado = document.getElementById("resultado")
 
-resultado.innerHTML = `Serão necessarios ${anos} anos para que a populaçaõ do pais A ultrapsse ou iguale a população do pais B` //alter alg coisa no html, `texto + numero`
+resultado.innerHTML = `Serão necessarios ${anos} anos para que a populaçaõ do pais A ultrapsse ou iguale a população do pais B`
 
 function limparCampos(){
     console.log("Botão de limpar campos")
@@ -45,7 +44,7 @@ function limparCampos(){
     document.getElementById("taxaB").value = ""
 
     let resultado = document.getElementById("resultado")
-    resultado.innerHTML = " "
+    resultado.innerHTML = " ";
 
 }
 
