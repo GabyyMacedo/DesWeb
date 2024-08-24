@@ -28,12 +28,14 @@ while (popA < popB){
     popB *= (1 + taxaB)
     anos++ 
 
-}
+
 console.log(" O número de anos calculados foi: ", anos)
 
 let resultado = document.getElementById("resultado")
 
 resultado.innerHTML = `Serão necessarios ${anos} anos para que a populaçaõ do pais A ultrapsse ou iguale a população do pais B`
+
+}
 
 function limparCampos(){
     console.log("Botão de limpar campos")
