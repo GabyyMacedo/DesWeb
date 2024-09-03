@@ -23,6 +23,12 @@ function calcularTotal() {
         case "uva":
             valor = 5.00; 
             break;
+        case "morango":
+            valor = 5.50;
+            break;
+        case "mamao":
+            valor = 2.50; 
+            break;
         default:
             valor = 0;
             break;
@@ -49,9 +55,9 @@ function addCarrinho(preco, quantidade, texto_elementoProduto) {
     let item = document.createElement('li');
     item.textContent = `${quantidade}x ${texto_elementoProduto} - R$${valorTotal.toFixed(2).replace('.', ',')}`;
 
-    let botao = document.createElement('button');
+    let botao = document.createElement('reset');
     botao.className = 'remover_item';
-    botao.type = 'button'; 
+    botao.type = 'reset'; 
     botao.textContent = "X";
 
     botao.onclick = function() {
